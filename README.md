@@ -3,8 +3,8 @@ nopCommerce payment plugin that uses the PaySafe Expinet API.
 nopCommerce site: [https://www.nopcommerce.com](https://www.nopcommerce.com)
 
 ***
-[Expinet Developer Docs](https://docs.expinet.net/developers)
-[Expinet Developer Sandbox](https://developer.sandbox.expinet.net)
+* [Expinet Developer Docs](https://docs.expinet.net/developers)
+* [Expinet Developer Sandbox](https://developer.sandbox.expinet.net)
 
 #### Install
 1. Download the [release](https://github.com/nixtus/paysafe-plugin-for-nopcommerce/releases) that matches your nopCommerce version
