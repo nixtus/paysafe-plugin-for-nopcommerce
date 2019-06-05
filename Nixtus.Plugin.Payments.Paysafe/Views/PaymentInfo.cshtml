@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "";
+}
+@model Nixtus.Plugin.Payments.Paysafe.Models.PaymentInfoModel
+
+<form>
+    <table width="100%" cellspacing="2" cellpadding="1" border="0">
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.CardNumber, false):
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.CardNumber, new { id = "ccnumber", style = "Width: 165px;", autocomplete = "off", maxlength = 22 })
+                    @Html.ValidationMessageFor(model => model.CardNumber)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.ExpireMonth, false):
+            </td>
+            <td>
+                @Html.DropDownListFor(model => model.ExpireMonth, Model.ExpireMonths)
+                    /
+                    @Html.DropDownListFor(model => model.ExpireYear, Model.ExpireYears)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.CardCode, false):
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.CardCode, new { id = "cvv", style = "Width: 60px;", autocomplete = "off", maxlength = 4 })
+                    @Html.ValidationMessageFor(model => model.CardCode)
+            </td>
+        </tr>
+    </table>
+</form>
